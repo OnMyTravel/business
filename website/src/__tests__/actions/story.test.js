@@ -2,7 +2,7 @@ import {loadTripAndSubressources}  from '../../actions/story';
 
 import * as actions from '../../actions/index';
 
-import Trip from '../../models/Trip';
+import Trip from '../../../../business/models/Trip';
 
 let mockedAction;
 jest.mock('../../actions/index', () => ({

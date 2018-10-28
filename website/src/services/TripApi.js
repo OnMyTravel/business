@@ -1,5 +1,5 @@
 import { Deserializer } from 'jsonapi-serializer'
-import Trip from '../models/Trip'
+import Trip from '../../../business/models/Trip'
 
 const tripDeserializer = new Deserializer({
   days: {

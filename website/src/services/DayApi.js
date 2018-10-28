@@ -1,7 +1,7 @@
 import { Deserializer } from 'jsonapi-serializer'
-import Day from '../models/Day'
-import Paragraph from '../models/Paragraph'
-import Image from '../models/Image'
+import Day from '../../../business/models/Day'
+import Paragraph from '../../../business/models/Paragraph'
+import Image from '../../../business/models/Image'
 
 const dayDeserializer = new Deserializer({
   paragraph: {
@@ -29,10 +29,6 @@ class DayApi {
     .then((day) => {
       return new Day(day);
     })
-  }
-
-  register(token) {
-    return this.httpClient.post('/users/register/facebook', {"access_token": token})
   }
 }
 

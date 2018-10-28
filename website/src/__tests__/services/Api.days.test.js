@@ -1,7 +1,6 @@
 import DayApi from '../../services/DayApi'
-import Day from '../../models/Day'
-import Paragraph from '../../models/Paragraph'
-import Image from '../../models/Image'
+import Day from '../../../../business/models/Day'
+import Paragraph from '../../../../business/models/Paragraph'
 
 describe('Services | API | Days', () => {
 
