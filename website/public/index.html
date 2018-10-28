@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet" defer async>
+    <script src="https://unpkg.com/ionicons@4.2.6/dist/ionicons.js" defer async></script> -->
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <title>On My Travel | Site en construction</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd2QEXYYPZHJMSWEq0L0_dMF4OCtdsTkk"></script> -->
+
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '1801749093371838',
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: 'v3.0'
+        });
+  
+        // Broadcast an event when FB object is ready
+        var fbInitEvent = new Event('FBObjectReady');
+        document.dispatchEvent(fbInitEvent);
+      };
+  
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </body>
+</html>

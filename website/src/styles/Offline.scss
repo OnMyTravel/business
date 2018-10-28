@@ -1,0 +1,16 @@
+.offline__wrapper {
+    background: url('../assets/plan-our-trip-resized.jpg') center;
+    background-size: cover;
+
+    .title {
+      color: white;
+    }
+}
+
+.offline__overlay {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+
+    .hero-body {
+      align-items: flex-end;
+    }
+}

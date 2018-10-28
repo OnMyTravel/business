@@ -1,0 +1,23 @@
+.location {
+  margin: auto;
+  color: white;
+  background-color: #046FDB;
+
+  border-radius: 4px;
+
+  max-width: 400px;
+  
+  .location-container {
+    display: flex;
+
+    .location-details {
+      flex-grow: 1;
+      padding: 10px;
+
+      .location-name {
+        font-weight: bold;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+.trip__frame {
+  flex-direction: "row";
+  display: flex;
+  flex-grow: 1;
+
+  .timeline {
+    max-height: 100vh;
+    overflow: scroll;  
+  }
+
+  .trip__map {
+    background: url('../assets/travelSplash/indonesia.jpg') center;
+    background-size: cover;
+  }  
+}
+
+.columns--override {
+  display: flex;
+}

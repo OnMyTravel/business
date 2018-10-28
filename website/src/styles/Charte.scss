@@ -1,0 +1,37 @@
+.charte__wrapper {
+  background-color: #E5E5E5;
+  height: 100%;
+  padding: 40px;
+}
+
+.charte__frame {
+  margin: 20px;
+}
+
+.modale {
+  background-color: white;
+  border-radius: 10px;
+
+  box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.modale-title {
+  background-color:#2C3239;
+  color: white;
+
+  font-weight: 300;
+
+  padding: 15px 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.modale-subtitle {
+  display: inline;
+  color: #A3A3A3;
+}
+
+.modale-content {
+  padding: 30px 30px;
+
+  font-weight: 300;
+}
