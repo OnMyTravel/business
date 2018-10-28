@@ -1,5 +1,5 @@
 import APIClient from '../../services/APIClient'
-import UserApi from '../../../../business/services/UserApi'
+import UserApi from '../../../../gateway/services/UserApi'
 import FacebookApi from '../../services/FacebookApi';
 import TripApi from '../../services/TripApi';
 import DayApi from '../../services/DayApi';

@@ -22,6 +22,8 @@ Trying to reproduce an architecture which is close to the one exposed above, in 
 
 - _mobile/_ folder (Framework level): Where Expo's framework code and UI code is
 - _website/_ folder (Framework level): Where React's framework code and UI code is
+- _gateway/_ folder (Interfaces level):
+  - _services/_ folder: Where the transformation between API and applications is made
 - _business/_ folder: 
   - _actions_ folder: Use-cases
   - _models_ folder: Entities

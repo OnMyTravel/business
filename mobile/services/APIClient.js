@@ -1,4 +1,4 @@
-import UserApi from '../../business/services/UserApi'
+import UserApi from '../../gateway/services/UserApi'
 import FacebookApi from './FacebookApi';
 
 class API {
