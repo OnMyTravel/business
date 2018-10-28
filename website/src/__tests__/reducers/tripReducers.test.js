@@ -1,5 +1,5 @@
 import tripReducers from '../../reducers/tripReducers';
-import { TRIP_DETAILS_LOADED } from '../../actions/actiontypes'
+import { TRIP_DETAILS_LOADED } from '../../../../business/actions/actiontypes'
 import API from '../../services/API';
 
 jest.mock('../../services/API');

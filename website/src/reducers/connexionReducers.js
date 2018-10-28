@@ -4,7 +4,7 @@ import {
   FACEBOOK_AUTHENTICATION_SUCCESS,
   API_AUTHENTICATION_SUCCESS,
   API_AUTHENTICATION_LOGOUT,
-} from '../actions/actiontypes'
+} from '../../../business/actions/actiontypes'
 
 const defaultState = {
   facebookAccess: null,

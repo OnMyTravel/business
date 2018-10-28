@@ -4,7 +4,7 @@ import {
   FACEBOOK_AUTHENTICATION_SUCCESS,
   API_AUTHENTICATION_SUCCESS,
   API_AUTHENTICATION_LOGOUT
-} from './actiontypes'
+} from '../../../business/actions/actiontypes'
 
 import { push } from 'react-router-redux'
 

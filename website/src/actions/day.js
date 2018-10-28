@@ -1,4 +1,4 @@
-import { LOADING_DAY_DETAILS, DAY_DETAILS_LOADED, LOADING_DAY_DETAILS_FAILED } from './actiontypes'
+import { LOADING_DAY_DETAILS, DAY_DETAILS_LOADED, LOADING_DAY_DETAILS_FAILED } from '../../../business/actions/actiontypes'
 import API from '../services/API'
 
 export const getDayDetailsFromId = (id) => {

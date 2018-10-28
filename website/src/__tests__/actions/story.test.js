@@ -1,5 +1,4 @@
 import {loadTripAndSubressources}  from '../../actions/story';
-import { LOADING_TRIP_DETAILS, TRIP_DETAILS_LOADED, LOADING_TRIP_DETAILS_FAILED } from '../../actions/actiontypes';
 
 import * as actions from '../../actions/index';
 
@@ -36,72 +35,5 @@ describe('Actions | Story', () => {
         expect(mockedAction).toHaveBeenCalledWith(dispatch)
       })
     })
-
-    // it('should use the API to load details and dispatch the results', () => {
-    //   // given
-    //   const dispatch = jest.fn()
-    //   const tripId = 14536;
-    //   const trip = { id: tripId }
-    //   API.Trip.get = jest.fn().mockImplementation(() => Promise.resolve(trip))
-
-    //   // when
-    //   const promise = getTripDetailsFromId(tripId)(dispatch)
-
-    //   // then
-    //   return promise.then(() => {
-    //     expect(API.Trip.get).toHaveBeenCalledWith(14536)
-    //     expect(dispatch).toHaveBeenCalledWith({
-    //       type: TRIP_DETAILS_LOADED,
-    //       result: trip
-    //     })
-    //   })
-    // })
-
-    // it('should use the API to load details and dispatch the results', () => {
-    //   // given
-    //   const dispatch = jest.fn()
-    //   const tripId = 14536;
-    //   const trip = { id: tripId }
-    //   API.Trip.get = jest.fn().mockImplementation(() => Promise.resolve(trip))
-
-    //   // when
-    //   const promise = getTripDetailsFromId(tripId)(dispatch)
-
-    //   // then
-    //   return promise.then(() => {
-    //     expect(API.Trip.get).toHaveBeenCalledWith(14536)
-    //     expect(dispatch).toHaveBeenCalledTimes(2)
-    //     expect(dispatch).toHaveBeenLastCalledWith(
-    //       {
-    //         type: TRIP_DETAILS_LOADED,
-    //         result: trip
-    //       }
-    //     )
-    //   })
-    // })
-
-    // it('should use the API to load details and dispatch the results', () => {
-    //   // given
-    //   const dispatch = jest.fn()
-    //   const tripId = 14536;
-    //   const trip = { id: tripId }
-    //   API.Trip.get = jest.fn().mockImplementation(() => Promise.reject())
-
-    //   // when
-    //   const promise = getTripDetailsFromId(tripId)(dispatch)
-
-    //   // then
-    //   return promise.then(() => {
-    //     expect(dispatch).toHaveBeenCalledTimes(2)
-    //     expect(dispatch).toHaveBeenLastCalledWith(
-    //       {
-    //         type: LOADING_TRIP_DETAILS_FAILED,
-    //         result: {
-    //           tripId
-    //         }
-    //       }
-    //     )
-    //   })
-    // })
   })
 })

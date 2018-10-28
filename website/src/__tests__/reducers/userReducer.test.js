@@ -1,5 +1,5 @@
 import userReducers from '../../reducers/userReducers';
-import { START_AUTHENTICATION, API_AUTHENTICATION_LOGOUT } from '../../actions/actiontypes'
+import { START_AUTHENTICATION, API_AUTHENTICATION_LOGOUT } from '../../../../business/actions/actiontypes'
 
 describe('userReducer', () => {
   describe('START_AUTHENTICATION', () => {

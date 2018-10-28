@@ -1,4 +1,4 @@
-import { LOADING_TRIP_DETAILS, TRIP_DETAILS_LOADED, LOADING_TRIP_DETAILS_FAILED } from './actiontypes';
+import { LOADING_TRIP_DETAILS, TRIP_DETAILS_LOADED, LOADING_TRIP_DETAILS_FAILED } from '../../../business/actions/actiontypes';
 import API from '../services/API'
 
 export const getTripDetailsFromId = (id) => {

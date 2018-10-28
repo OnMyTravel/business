@@ -1,7 +1,7 @@
 import {
   LOAD_USER_PROFILE,
   API_AUTHENTICATION_LOGOUT
-} from '../actions/actiontypes'
+} from '../../../business/actions/actiontypes'
 
 const defaultState = {}
 

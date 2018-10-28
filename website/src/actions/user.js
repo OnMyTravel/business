@@ -1,4 +1,4 @@
-import { LOAD_USER_PROFILE } from '../actions/actiontypes'
+import { LOAD_USER_PROFILE } from '../../../business/actions/actiontypes'
 
 import API from '../services/API'
 

@@ -1,4 +1,4 @@
-import { TRIP_DETAILS_LOADED } from '../actions/actiontypes'
+import { TRIP_DETAILS_LOADED } from '../../../business/actions/actiontypes'
 const tripReducers = (state = {}, action) => {
   switch (action.type) {
     case TRIP_DETAILS_LOADED:

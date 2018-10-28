@@ -1,6 +1,6 @@
 import dayReducers from '../../reducers/dayReducers';
 
-import { LOADING_DAY_DETAILS, DAY_DETAILS_LOADED, LOADING_DAY_DETAILS_FAILED } from '../../actions/actiontypes'
+import { LOADING_DAY_DETAILS, DAY_DETAILS_LOADED, LOADING_DAY_DETAILS_FAILED } from '../../../../business/actions/actiontypes'
 import { LOADING, FAILED } from '../../reducers/const'
 
 import API from '../../services/API';

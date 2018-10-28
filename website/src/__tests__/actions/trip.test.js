@@ -1,5 +1,5 @@
-import { getTripDetailsFromId, loadTripAndSubressources } from '../../actions/index';
-import { LOADING_TRIP_DETAILS, TRIP_DETAILS_LOADED, LOADING_TRIP_DETAILS_FAILED } from '../../actions/actiontypes';
+import { getTripDetailsFromId } from '../../actions/index';
+import { LOADING_TRIP_DETAILS, TRIP_DETAILS_LOADED, LOADING_TRIP_DETAILS_FAILED } from '../../../../business/actions/actiontypes';
 
 import API from '../../services/API'
 
