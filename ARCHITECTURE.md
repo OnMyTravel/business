@@ -27,4 +27,4 @@ Trying to reproduce an architecture which is close to the one exposed above, in 
   - _models_ folder: Entities
   - _reducers_ folder
 
-**I am not sure yet what is the position of reducers in this architecture, since it is there to deal with side-effects and organize data. I am quite sure that it belongs to the business part, but not sûre exactly of the way.**
+**I am not sure yet what is the position of reducers in this architecture, since it is there to deal with side-effects and organize data. I am not sure that it belongs to the business part, but don't know exactly what to do with it.**
