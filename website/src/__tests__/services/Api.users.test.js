@@ -1,4 +1,4 @@
-import UserApi from '../../services/UserApi'
+import UserApi from '../../../../business/services/UserApi'
 import User from '../../../../business/models/User'
 
 describe('Services | API | Users', () => {

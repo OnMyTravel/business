@@ -1,4 +1,4 @@
-import User from '../../../business/models/User'
+import User from '../models/User'
 
 class UserApi {
   constructor({ httpClient } = {}) {
@@ -15,8 +15,8 @@ class UserApi {
   }
 
   register(token) {
-    return this.httpClient.post('/users/register/facebook', {"access_token": token})
+    return this.httpClient.post('/users/register/facebook', { "access_token": token })
   }
 }
 
-export default UserApi
+module.exports = UserApi

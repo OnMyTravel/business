@@ -34,7 +34,6 @@ export const startConnexion = () => {
           }
         })
 
-        //      dispatch(push('/profile'));
       })
       .then(() => {
         return API.User.get()

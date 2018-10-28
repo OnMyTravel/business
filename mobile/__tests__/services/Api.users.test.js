@@ -1,4 +1,4 @@
-import UserApi from '../../services/UserApi'
+import UserApi from '../../../business/services/UserApi'
 import User from '../../../business/models/User'
 
 describe('Services | API | Users', () => {
@@ -7,14 +7,14 @@ describe('Services | API | Users', () => {
   let httpClientMock;
   beforeEach(() => {
     httpClientMock = {
-      get: jest.fn().mockImplementation(() => Promise.resolve({ json: () => Promise.resolve({
+      get: jest.fn().mockImplementation(() => Promise.resolve({
         "_id": "5afd35e767887f18ff0579d9",
         "name": "Adrien Saunier",
         "email": "contact-me@onmy.travel",
         "id_facebook": "10209454505977406"
-      })})),
+      })),
 
-      post: jest.fn().mockImplementation(() => Promise.resolve({ json: () => {} }))
+      post: jest.fn().mockImplementation(() => Promise.resolve())
     }
 
     apiUser = new UserApi({
@@ -65,7 +65,7 @@ describe('Services | API | Users', () => {
       const promise = apiUser.register(token)
 
       // then
-      return promise.then((user) => {
+      return promise.then(() => {
         expect(httpClientMock.post).toHaveBeenCalledWith('/users/register/facebook', {
           access_token: token
         });
