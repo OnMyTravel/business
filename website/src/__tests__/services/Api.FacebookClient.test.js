@@ -1,18 +1,16 @@
-import FacebookApi from '../../services/FacebookApi'
+import FacebookClient from '../../services/FacebookClient'
 import FacebookAccess from '../../../../business/models/FacebookAccess'
 import FacebookLoginError from '../../errors/FacebookLoginError'
 
-describe('Services | API | Facebook', () => {
+describe('Services | API | FacebookClient', () => {
 
-  let facebookApi;
+  let facebookClient;
   beforeEach(() => {
     global.window.FB = {
       login: jest.fn()
     }
 
-    facebookApi = new FacebookApi({
-      httpClient: {}
-    });
+    facebookClient = new FacebookClient({});
   })
 
   describe('.login()', () => {
@@ -31,12 +29,12 @@ describe('Services | API | Facebook', () => {
     })
 
     test('should have a property login()', () => {
-      expect(facebookApi.login).toBeDefined();
+      expect(facebookClient.login).toBeDefined();
     })
 
     test('should use the FB global object to contact', () => {
       // when
-      const promise = facebookApi.login()
+      const promise = facebookClient.login()
 
       // then
       return promise.then(_ => {
@@ -50,14 +48,14 @@ describe('Services | API | Facebook', () => {
         global.window.FB.login.mockImplementation(callback => callback({ status: 'unknown' }))
 
         // then
-        return expect(facebookApi.login()).rejects.toEqual(new FacebookLoginError('unknown'))
+        return expect(facebookClient.login()).rejects.toEqual(new FacebookLoginError('unknown'))
       })
     })
 
     describe('when the login is a success', () => {
       test('should use the FB global object to contact', () => {
         // when
-        const promise = facebookApi.login()
+        const promise = facebookClient.login()
 
         // then
         return promise.then((facebookAccess) => {

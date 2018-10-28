@@ -1,8 +1,8 @@
-import APIClient from '../../services/APIClient'
+import APIClient from '../../../../gateway/APIClient'
 import UserApi from '../../../../gateway/services/UserApi'
-import FacebookApi from '../../services/FacebookApi';
-import TripApi from '../../services/TripApi';
-import DayApi from '../../services/DayApi';
+import FacebookApi from '../../../../gateway/services/FacebookApi';
+import TripApi from '../../../../gateway/services/TripApi';
+import DayApi from '../../../../gateway/services/DayApi';
 
 describe('Services | APIClient', () => {
   let apiClient;

@@ -1,4 +1,4 @@
-import DayApi from '../../services/DayApi'
+import DayApi from '../../../../gateway/services/DayApi'
 import Day from '../../../../business/models/Day'
 import Paragraph from '../../../../business/models/Paragraph'
 

@@ -1,6 +1,6 @@
-import APIClient from '../../services/APIClient'
+import APIClient from '../../../gateway/APIClient'
 import UserApi from '../../../gateway/services/UserApi'
-import FacebookApi from '../../services/FacebookApi';
+import FacebookApi from '../../../gateway/services/FacebookApi';
 
 jest.mock('fetch')
 

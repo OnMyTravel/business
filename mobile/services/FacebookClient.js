@@ -2,9 +2,8 @@ import FacebookLoginError from '../errors/FacebookLoginError'
 import FacebookAccess from '../../business/models/FacebookAccess';
 import Expo from 'expo';
 
-class FacebookApi {
-  constructor({ httpClient } = {}) {
-    this.httpClient = httpClient;
+class FacebookClient {
+  constructor({  } = {}) {
   }
 
   login() {
@@ -15,7 +14,7 @@ class FacebookApi {
     return response.then((response) => {
       const { type, token } = response;
 
-      if (response.type === 'success') {
+      if (type === 'success') {
 
         return fetch(`https://graph.facebook.com/me?fields=id,name,email&access_token=${token}`)
           .then((response) => response.json())
@@ -32,4 +31,4 @@ class FacebookApi {
   }
 }
 
-export default FacebookApi
+export default FacebookClient

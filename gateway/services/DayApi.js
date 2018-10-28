@@ -1,7 +1,7 @@
 import { Deserializer } from 'jsonapi-serializer'
-import Day from '../../../business/models/Day'
-import Paragraph from '../../../business/models/Paragraph'
-import Image from '../../../business/models/Image'
+import Day from '../../business/models/Day'
+import Paragraph from '../../business/models/Paragraph'
+import Image from '../../business/models/Image'
 
 const dayDeserializer = new Deserializer({
   paragraph: {
@@ -13,7 +13,7 @@ const dayDeserializer = new Deserializer({
     valueForRelationship: (image, included) => {
       return new Image(included)
     }
-  }
+  } 
 });
 
 class DayApi {

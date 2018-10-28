@@ -1,9 +1,8 @@
 import FacebookAccess from '../../../business/models/FacebookAccess'
 import FacebookLoginError from '../errors/FacebookLoginError'
 
-class FacebookApi {
-  constructor({ httpClient } = {}) {
-    this.httpClient = httpClient;
+class FacebookClient {
+  constructor({ } = {}) {
   }
 
   login() {
@@ -22,4 +21,4 @@ class FacebookApi {
   }
 }
 
-export default FacebookApi
+export default FacebookClient

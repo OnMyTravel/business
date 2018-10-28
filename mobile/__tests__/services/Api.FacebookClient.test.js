@@ -1,17 +1,15 @@
-import FacebookApi from '../../services/FacebookApi'
+import FacebookClient from '../../services/FacebookClient'
 import FacebookAccess from '../../../business/models/FacebookAccess'
 
 import Expo from 'expo';
 jest.mock('expo');
 jest.mock('fetch');
 
-describe('Services | API | Facebook', () => {
+describe('Services | API | FacebookClient', () => {
 
-  let facebookApi;
+  let facebookClient;
   beforeEach(() => {
-    facebookApi = new FacebookApi({
-      httpClient: {}
-    });
+    facebookClient = new FacebookClient({});
 
     global.fetch = jest.fn()
       .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve({ id: 1346536782 }) }))
@@ -27,12 +25,12 @@ describe('Services | API | Facebook', () => {
     })
 
     test('should have a property login()', () => {
-      expect(facebookApi.login).toBeDefined();
+      expect(facebookClient.login).toBeDefined();
     })
 
     test('should use the FB global object to contact', () => {
       // when
-      const promise = facebookApi.login()
+      const promise = facebookClient.login()
 
       // then
       return promise.then(_ => {
@@ -46,14 +44,14 @@ describe('Services | API | Facebook', () => {
         Expo.Facebook.logInWithReadPermissionsAsync.mockImplementation(() => Promise.resolve({ type: 'unknown' }))
 
         // then
-        return expect(facebookApi.login()).rejects.toEqual(new Error('unknown'))
+        return expect(facebookClient.login()).rejects.toEqual(new Error('unknown'))
       })
     })
 
     describe('when the login is a success', () => {
       test('should use the FB global object to contact', () => {
         // when
-        const promise = facebookApi.login()
+        const promise = facebookClient.login()
 
         // then
         return promise.then((facebookAccess) => {

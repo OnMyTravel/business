@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "jsonapi-serializer": "^3.6.2"
   }
 }

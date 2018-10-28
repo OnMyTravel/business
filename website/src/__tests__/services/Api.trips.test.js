@@ -1,4 +1,4 @@
-import TripApi from '../../services/TripApi'
+import TripApi from '../../../../gateway/services/TripApi'
 import Trip from '../../../../business/models/Trip'
 
 describe('Services | API | Trips', () => {
