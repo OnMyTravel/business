@@ -1,5 +1,5 @@
 import FacebookLoginError from '../errors/FacebookLoginError'
-import FacebookAccess from '../models/FacebookAccess';
+import FacebookAccess from '../../business/models/FacebookAccess';
 import Expo from 'expo';
 
 class FacebookApi {

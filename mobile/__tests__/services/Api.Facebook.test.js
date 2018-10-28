@@ -1,5 +1,5 @@
 import FacebookApi from '../../services/FacebookApi'
-import FacebookAccess from '../../models/FacebookAccess'
+import FacebookAccess from '../../../business/models/FacebookAccess'
 
 import Expo from 'expo';
 jest.mock('expo');

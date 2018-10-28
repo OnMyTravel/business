@@ -1,4 +1,4 @@
-import FacebookAccess from '../models/FacebookAccess'
+import FacebookAccess from '../../../business/models/FacebookAccess'
 import FacebookLoginError from '../errors/FacebookLoginError'
 
 class FacebookApi {

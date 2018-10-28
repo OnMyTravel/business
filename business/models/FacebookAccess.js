@@ -5,4 +5,4 @@ class FacebookAccess {
   }
 }
 
-export default FacebookAccess
+module.exports = FacebookAccess
