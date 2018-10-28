@@ -1,4 +1,4 @@
-import User from '../models/User'
+import User from '../../../business/models/User'
 
 class UserApi {
   constructor({ httpClient } = {}) {
