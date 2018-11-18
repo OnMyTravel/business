@@ -1,4 +1,4 @@
-import userReducers from '../../reducers/userReducers';
+import userReducers from '../../../../gateway/reducers/userReducers';
 import { START_AUTHENTICATION, API_AUTHENTICATION_LOGOUT } from '../../../../business/actions/actiontypes'
 
 describe('userReducer', () => {

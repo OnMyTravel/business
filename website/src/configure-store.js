@@ -6,7 +6,7 @@ import createHistory from 'history/createBrowserHistory'
 
 import thunk from 'redux-thunk';
 
-import reducers from './reducers'
+import reducers from '../../gateway/reducers'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

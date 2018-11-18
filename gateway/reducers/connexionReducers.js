@@ -7,7 +7,6 @@ import {
 } from '../../business/actions/actiontypes'
 
 const defaultState = {
-  connexionError: null,
   facebookAccess: null,
   accessToken: null
 }
