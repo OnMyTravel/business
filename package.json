@@ -1,17 +1,35 @@
 {
-  "name": "onmytravel-clients",
-  "version": "1.0.0",
-  "description": "",
+  "name": "omt-business",
+  "version": "0.0.0",
+  "description": "Core actions and data access for OnMyTravel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "author": "",
+  "author": "Adrien Saunier",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-jest": "^24.5.0",
     "babel-preset-es2015": "^6.24.1"
   },
   "dependencies": {
+    "jest": "^24.5.0",
     "jsonapi-serializer": "^3.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnMyTravel/business.git"
+  },
+  "keywords": [
+    "redux",
+    "jest",
+    "core",
+    "onmytravel"
+  ],
+  "bugs": {
+    "url": "https://github.com/OnMyTravel/business/issues"
+  },
+  "homepage": "https://github.com/OnMyTravel/business#readme"
 }
